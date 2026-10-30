@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Business Automation — Bodoland Entrepreneurs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-error-container": "#93000a",
+            "tertiary-fixed": "#cbead5",
+            "outline-variant": "#c0c9c0",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#d3daef",
+            "secondary": "#006d30",
+            "primary-container": "#083e23",
+            "on-primary": "#ffffff",
+            "surface-container": "#e9edff",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed": "#052013",
+            "inverse-surface": "#293040",
+            "tertiary-container": "#203b2c",
+            "on-background": "#141b2b",
+            "on-primary-fixed": "#00210f",
+            "secondary-container": "#92f5a4",
+            "error": "#ba1a1a",
+            "surface-variant": "#dce2f7",
+            "secondary-fixed-dim": "#79db8d",
+            "primary-fixed": "#b9efc8",
+            "on-secondary-fixed-variant": "#005323",
+            "inverse-on-surface": "#edf0ff",
+            "on-primary-container": "#77aa86",
+            "on-tertiary-container": "#87a592",
+            "primary": "#002613",
+            "surface-container-low": "#f1f3ff",
+            "surface": "#f9f9ff",
+            "surface-container-high": "#e1e8fd",
+            "outline": "#717971",
+            "inverse-primary": "#9ed3ad",
+            "surface-bright": "#f9f9ff",
+            "on-surface": "#141b2b",
+            "surface-tint": "#376849",
+            "surface-container-highest": "#dce2f7",
+            "tertiary-fixed-dim": "#afceba",
+            "error-container": "#ffdad6",
+            "on-tertiary-fixed-variant": "#314d3d",
+            "on-primary-fixed-variant": "#1e5033",
+            "secondary-fixed": "#95f8a7",
+            "on-tertiary": "#ffffff",
+            "tertiary": "#092518",
+            "background": "#f9f9ff",
+            "on-secondary-fixed": "#00210a",
+            "on-secondary-container": "#007233",
+            "on-surface-variant": "#414942",
+            "primary-fixed-dim": "#9ed3ad",
+            "on-error": "#ffffff"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          spacing: {
+            "space-xl": "2.5rem",
+            gutter: "2rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "gutter-sm": "1rem",
+            "margin-md": "1.5rem",
+            "margin-lg": "2rem",
+            "space-lg": "1.5rem",
+            margin: "1rem",
+            "space-xs": "0.25rem"
+          },
+          fontFamily: {
+            "headline-xl-mobile": ["Manrope"],
+            "headline-sm": ["Manrope"],
+            "body-sm": ["Inter"],
+            "headline-xl": ["Manrope"],
+            "headline-2xl-mobile": ["Manrope"],
+            "headline-lg": ["Manrope"],
+            "label-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-md": ["Manrope"],
+            "headline-2xl": ["Manrope"],
+            "body-lg": ["Inter"],
+            "body-md": ["Inter"]
+          },
+          fontSize: {
+            "headline-xl-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700" }],
+            "headline-sm": ["15px", { lineHeight: "20px", fontWeight: "600" }],
+            "body-sm": ["13px", { lineHeight: "19px", fontWeight: "400" }],
+            "headline-xl": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "headline-2xl-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "800" }],
+            "headline-lg": ["22px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "700" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "700" }],
+            "label-md": ["13px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+            "headline-md": ["18px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-2xl": ["44px", { lineHeight: "52px", letterSpacing: "-0.025em", fontWeight: "800" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+            "body-md": ["15px", { lineHeight: "24px", fontWeight: "400" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+
+<main class="w-full pt-[120px] bg-background min-h-screen">
+  <div class="flex flex-col w-full">
+    
+    <!-- Editorial Canvas Centered Max-W Container -->
+    <div class="w-full max-w-[1160px] mx-auto px-gutter-sm lg:px-gutter py-space-lg">
+      
+      <!-- Top Breadcrumb, Title & Filter Header -->
+      <div class="flex flex-col gap-space-xs mb-space-lg">
+  <nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+    <a class="hover:text-secondary transition-colors" href="index.html">Home</a>
+    <span class="text-outline-variant">/</span>
+    <a class="hover:text-secondary transition-colors" href="business-ideas.html">Business Ideas</a><span class="text-outline-variant">/</span><span class="text-secondary font-semibold">Business Automation</span>
+  </nav>
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+    <div>
+      <h1 class="font-headline-2xl text-headline-2xl text-primary font-bold tracking-tight">
+        Business <span class="text-secondary">Automation</span>
+      </h1>
+      <p class="font-body-md text-body-md text-on-surface-variant max-w-3xl mt-space-xs leading-relaxed">
+        Streamlining inventory, automated GST invoicing, CRM integrations, and warehouse logistics automation for Northeast SMEs.
+      </p>
+    </div>
+    <div class="hidden lg:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-sm rounded-lg shrink-0">
+      <span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+      <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Field-Audited Margins</span>
+    </div>
+  </div>
+  <div class="flex items-center gap-space-xs overflow-x-auto py-space-sm no-scrollbar mt-space-sm">
+    <a href="business-ideas.html" class="filter-pill shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-semibold transition-colors cursor-pointer">
+      All Opportunities
+    </a>
+    <a href="business-ideas-low-investment.html" class="filter-pill shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-semibold transition-colors cursor-pointer">
+      Low-Investment Ideas
+    </a>
+    <a href="business-ideas-ai-in-business.html" class="filter-pill shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-semibold transition-colors cursor-pointer">
+      AI in Business
+    </a>
+    <a href="business-ideas-business-automation.html" class="filter-pill shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary shadow-sm font-bold transition-colors cursor-pointer">
+      Business Automation
+    </a>
+    <a href="business-ideas-digital-transformation.html" class="filter-pill shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-semibold transition-colors cursor-pointer">
+      Digital Transformation
+    </a>
+    <a href="business-ideas-industry-opportunities.html" class="filter-pill shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-semibold transition-colors cursor-pointer">
+      Industry Opportunities
+    </a>
+  </div>
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm py-space-xs bg-surface-container-lowest px-space-md rounded-lg shadow-sm">
+    <div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+      <span class="w-2 h-2 rounded-full bg-secondary inline-block animate-pulse"></span>
+      <span class="font-semibold text-on-surface" id="filter-counter">Showing vetted blueprints in "Business Automation" (9 matches)</span>
+    </div>
+    <div class="flex items-center gap-space-sm">
+      <label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold" for="capital-tier-select">Filter by Capital:</label>
+      <div class="relative inline-block">
+        <select class="appearance-none bg-surface-container-low text-on-surface font-label-md text-label-md pl-space-sm pr-space-lg py-1 rounded focus:outline-none cursor-pointer" id="capital-tier-select">
+          <option value="All Tiers">All Tiers</option>
+          <option value="Under ₹50k">Under ₹50,000</option>
+          <option value="₹50k - ₹2L">₹50,000 – ₹2,00,000</option>
+          <option value="₹2L - ₹10L">₹2,00,000 – ₹10,00,000</option>
+        </select>
+        <span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-[18px]">expand_more</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Master Two-Column Grid: Left Sidebar (28%) + Main Stream (72%) -->
+      <!-- Master Two-Column Grid: Left Sidebar (28%) + Main Stream (72%) -->
+      <!-- Master Two-Column Grid: Left Sidebar (28%) + Main Stream (72%) -->
+      <!-- Master Two-Column Grid: Left Sidebar (28%) + Main Stream (72%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT SIDEBAR: Latest Blueprints (lg:col-span-4 or ~28-32%) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg order-2 lg:order-1">
+<!-- Sidebar List Block -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Latest Blueprints</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Updated Daily</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Compact Row 1 -->
+<article class="flex items-start gap-space-sm group cursor-pointer pb-space-sm bg-surface-container-lowest" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'">
+<img alt="D2C Bamboo Cutlery" class="w-[60px] h-[60px] rounded-lg object-cover shrink-0 shadow-sm group-hover:opacity-90 transition-opacity" data-alt="Close up photography of clean artisan crafted sustainable bamboo cutlery fork spoon and chopsticks neatly arranged on handmade mulberry bark textured paper in Kokrajhar workshop warm ambient sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK-6Qmaz3ASPh3szjz7SO6k9pMFxjDZ8LqVYRP5sWllatvV_2FmGjJyyeCtQ3GnofFft37lod4WW2quksz5E0vvHNI2jOxCY7Wnu48RzfqVVyxm1xfvHUOC9u_iz_yDYXyitJp57F4p3Ko7TJFKbrat3uJz7FtiBaqQJkGPzMTNZ-0l1DVnMJW_-OKoUKpuiFpFRD7HuQObhz-z2Yx-gqcpkF0CDuLib-C7hQprzg"/>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<span class="inline-block self-start px-1.5 py-0.5 rounded text-[10px] font-bold tracking-wider uppercase bg-secondary-fixed text-on-secondary-fixed">Setup: ₹35k</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold group-hover:text-secondary transition-colors line-clamp-2 mt-0.5 leading-snug">
+                  D2C Bamboo Cutlery: ₹35k Setup with Local Kokrajhar Timber
+                </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Oct 26, 2026 • 4 min read</span>
+</div>
+</article>
+<!-- Compact Row 2 -->
+<article class="flex items-start gap-space-sm group cursor-pointer pb-space-sm bg-surface-container-lowest" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'">
+<img alt="Village GST Invoicing" class="w-[60px] h-[60px] rounded-lg object-cover shrink-0 shadow-sm group-hover:opacity-90 transition-opacity" data-alt="Smartphone displaying a conversational WhatsApp interface generating bilingual Assamese and English GST bills for rural grocery merchants in Western Assam, subtle green tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpGq7IUeUuMpzIpTKyftd0zM76ReIA4ZrI7WfaJtwlZpNm6eItZOSguqifrZ2pVrnCes8K0n8SPcCyFq-Vnn7oy7N0chDpMicH_-rgIaQEnHkR1-MQsfSRGqMBY7KPIQkuU20VIPt81BWSSSx_-P7i6fesFR7DEVJ7D-flH5TbR2F2XTYQi6r0mcYvdwaI5LcLm-Mj5d3skK98YGWcpKmjKN19okPW74WesiwoNU0"/>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<span class="inline-block self-start px-1.5 py-0.5 rounded text-[10px] font-bold tracking-wider uppercase bg-surface-container-high text-on-primary-fixed-variant">AI / Micro-SaaS</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold group-hover:text-secondary transition-colors line-clamp-2 mt-0.5 leading-snug">
+                  Automating Village GST Invoices via WhatsApp API Bots
+                </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Oct 25, 2026 • 5 min read</span>
+</div>
+</article>
+<!-- Compact Row 3 -->
+<article class="flex items-start gap-space-sm group cursor-pointer pb-space-sm bg-surface-container-lowest" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'">
+<img alt="Micro-Mushroom Farming" class="w-[60px] h-[60px] rounded-lg object-cover shrink-0 shadow-sm group-hover:opacity-90 transition-opacity" data-alt="Macro photography of fresh oyster mushroom clusters growing on suspended humidity-regulated paddy straw substrate logs inside a bamboo greenhouse in Udalguri district Assam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAPkfTtnumJYs16juOGJhjZO7qLj9VNKsCYoO_LOOISiqtnVgsvDBxqoWgY-D-0sorfjE_5iukUuvMmjFld28ZPwErjNvgyLPP4njByEwrWAWFEJyv-Qdlol2JsbHtmcWxM743tjFzQtSSFwgoqCEaZ1pEoHh6vDLnO8hHr6dP-kAXX0aNBMAtNXPsyRrDWXDZ6G8STiflXCLMtwGyx2_qqxGig7sShKQrmSF75js"/>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<span class="inline-block self-start px-1.5 py-0.5 rounded text-[10px] font-bold tracking-wider uppercase bg-secondary-fixed text-on-secondary-fixed">Setup: ₹22k</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold group-hover:text-secondary transition-colors line-clamp-2 mt-0.5 leading-snug">
+                  Micro-Mushroom Farming in Udalguri: 45-Day Harvest Cycles
+                </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Oct 24, 2026 • 6 min read</span>
+</div>
+</article>
+<!-- Compact Row 4 -->
+<article class="flex items-start gap-space-sm group cursor-pointer pb-space-sm bg-surface-container-lowest" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'">
+<img alt="Natural Dye Weaving Studio" class="w-[60px] h-[60px] rounded-lg object-cover shrink-0 shadow-sm group-hover:opacity-90 transition-opacity" data-alt="Traditional handwoven Bodo dokhona textiles draped gracefully in an airy sunlight-filled natural dye workshop using marigold and madder roots with clean wooden looms in Chirang" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC87NaXKBEuITsET7Lzkg94GgxmB46m2U4P7FYQV15E1usuAxTn-42tfLxWM-biDmEz13mURAsaveDfvvB1yXTcwvTZ5oRbQPcutVPH4OzIIRkIYLYPVg9X_Ukgxt6WgfCvtUzxvmeWWRjH-N_6qyMQ2CTd15pQQTBdbAKk6ef6BFTkweyksGCdIWvuyaE_RFTvw_VZp4wxpOsg8YSxuzms9uUNB93-ORTQqiShquw"/>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<span class="inline-block self-start px-1.5 py-0.5 rounded text-[10px] font-bold tracking-wider uppercase bg-surface-container-high text-on-primary-fixed-variant">Craft Export</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold group-hover:text-secondary transition-colors line-clamp-2 mt-0.5 leading-snug">
+                  Botanical Dyeing of Bodo Dokhona for Urban Boutique Supply
+                </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Oct 22, 2026 • 7 min read</span>
+</div>
+</article>
+<!-- Compact Row 5 -->
+<article class="flex items-start gap-space-sm group cursor-pointer pb-space-sm bg-surface-container-lowest" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'">
+<img alt="Inter-District Courier Relay" class="w-[60px] h-[60px] rounded-lg object-cover shrink-0 shadow-sm group-hover:opacity-90 transition-opacity" data-alt="Minimalist desktop showing custom thermal label printer spitting out barcode tags for rural Assam express logistics parcel hub surrounded by recycled craft packaging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOdGLjPhSh8wiMCyyto95TuTaFVJkTygLt62NBz6cilXnYUpaPUC3xX7JVOjOLJFTfDAcdbQ3zHdV2akv73RMM5u9vBQvICsyeYwxKTYy9CCNft698oWN0PQ48Mq843CJbfa1o7vLDJblqdQRpl_UUL3JmlYEyyz7yBFZj2f-pG2-AaitMaCD6YLnvpLFmmdh27hnZmdalh93deCqUxKQXJSeIZarPEsx4NmiND1w"/>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<span class="inline-block self-start px-1.5 py-0.5 rounded text-[10px] font-bold tracking-wider uppercase bg-secondary-fixed text-on-secondary-fixed">Setup: ₹80k</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold group-hover:text-secondary transition-colors line-clamp-2 mt-0.5 leading-snug">
+                  Inter-District Hub-and-Spoke Micro Parcel Relay Franchise
+                </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Oct 20, 2026 • 5 min read</span>
+</div>
+</article>
+<!-- Compact Row 6 -->
+<article class="flex items-start gap-space-sm group cursor-pointer bg-surface-container-lowest" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'" onclick="window.location.href='article-detail.html?id=bamboo-cutlery'">
+<img alt="Cold Chain Aggregator" class="w-[60px] h-[60px] rounded-lg object-cover shrink-0 shadow-sm group-hover:opacity-90 transition-opacity" data-alt="Modern solar-powered mobile cold room trailer designed for fresh Assam lemon Kaji Nemu and aromatic black rice parked beside green paddy fields in Baksa district" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnYF2Ep5Z6wgBCthZChB5IE1XCLV32dKmijP-vT68iRQHJAAmQhZYJgv8eNOtpOBuDkcNF2cbESA1splPUw23rvfEwwysREHroaKyjflGsr2wMZZygF0H79wNV24dzJQRGyTHUTVydix0vgb8YHSy0Qk5O6cxCz6udTAvlcmwp0gx2JRCDPiv4yZr6sM26sg3YdHt6NNXsaNEoimbuIIPUxFUpM_WHX_zeeRCuPKw"/>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<span class="inline-block self-start px-1.5 py-0.5 rounded text-[10px] font-bold tracking-wider uppercase bg-surface-container-high text-on-primary-fixed-variant">Agri-Hub</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold group-hover:text-secondary transition-colors line-clamp-2 mt-0.5 leading-snug">
+                  Refrigerated Farm-Gate Van Aggregation for Kaji Nemu
+                </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Oct 19, 2026 • 4 min read</span>
+</div>
+</article>
+</div>
+</div>
+<!-- Download Venture Toolkit Callout Box -->
+<div class="bg-primary text-on-primary p-space-md rounded-xl shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-secondary opacity-20 pointer-events-none"></div>
+<div class="flex items-center gap-space-xs text-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]">folder_zip</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Free Download</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-primary leading-tight">
+            Bodoland 2026 Venture Feasibility Toolkit
+          </h3>
+<p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">
+            Includes downloadable Excel financial models, APEDA licensing guides, NEDFi subsidy calculators, and sample supplier contracts.
+          </p>
+<div class="pt-space-xs">
+<button class="w-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-headline-sm text-headline-sm py-2 px-space-md rounded-lg flex items-center justify-center gap-space-xs transition-colors shadow-sm cursor-pointer">
+<span>Download Toolkit (.XLSX)</span>
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-[11px] text-surface-variant pt-1">
+<span>Verified by CA &amp; BTR Trade Council</span>
+<span>v4.2 (Updated Oct 2026)</span>
+</div>
+</div>
+<!-- Regional Macro Metrics Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Bodoland Micro-Enterprise Index</span>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg">
+<span class="font-headline-md text-headline-md font-bold text-secondary">₹14.8k</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Avg. Monthly Margin (SHGs)</p>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg">
+<span class="font-headline-md text-headline-md font-bold text-primary">68%</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Subsidy Support via PMEGP</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- MAIN COLUMN: 7 Detailed Editorial Article Rows (lg:col-span-8 or ~72%) -->
+<main class="lg:col-span-8 flex flex-col gap-space-lg order-1 lg:order-2">
+<!-- ARTICLE ROW 1 -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md items-start">
+<div class="flex-1 flex flex-col justify-between h-full">
+<div>
+<!-- Pill Badge -->
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-bold tracking-wider uppercase bg-secondary-fixed text-on-secondary-fixed">
+                  AGRI-LOGISTICS
+                </span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-on-surface-variant">
+                  Western Assam Focus
+                </span>
+</div>
+<!-- Headline -->
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold hover:text-secondary transition-colors cursor-pointer leading-tight mb-space-xs"><a href="article-detail.html?id=ginger-turmeric" class="hover:text-secondary transition-colors">
+                Establishing a Solar-Assisted Cold-Sorting Hub for Ginger &amp; Turmeric: Capital, FSSAI &amp; RoI Analysis
+              </a></h2>
+<!-- Capital & Payback Badges -->
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                  Capital: ₹1.2L – ₹2.8L
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+                  Payback: 5-7 Months
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                  Margin: 38%
+                </span>
+</div>
+<!-- Metadata -->
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-xs">
+<span class="font-medium text-on-surface">By Bipul Daimary</span>
+<span>•</span>
+<span>Oct 26, 2026</span>
+<span>•</span>
+<span>7 min read</span>
+</div>
+<!-- Journalistic Summary -->
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed mb-space-md">
+                Raw Lakadong-grade turmeric and fresh Karbi ginger lose up to 24% value due to moisture spoilage during farm-gate transit. This model leverages low-cost rooftop solar sorting chambers in Kokrajhar, creating immediate aggregation premiums for interstate traders.
+              </p>
+</div>
+<!-- CTA -->
+<a class="inline-flex items-center gap-space-xs font-headline-sm text-headline-sm text-secondary hover:text-primary transition-colors font-semibold group" href="#">
+<span>View Blueprint Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Right Thumbnail (4:3 ratio) -->
+<div class="w-full md:w-[260px] md:h-[195px] shrink-0 rounded-lg overflow-hidden shadow-sm">
+<img alt="Ginger sorting hub" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Editorial photograph of an Assam agricultural cooperative washing and grading organic ginger roots beneath a modern solar-powered green roof awning in Western Assam with warm late afternoon light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdtoFCGxT6GFMs1J5cvP-FZJdFDyT3H94MQRb_YET-F1cyAzKSX2GXlRTTR3RiXibBKwo8OmMrJyJAKtDoVHKW8bjhWirQSoz77D0rSNALlMn1pKUkRDHpdZr1Vqbta303df6EUEOgbbXKhu5-3vSFgqwaKNl7pgQCOaBFWLRm75qB21mTNpOED9SSu5vjT2hrySrjoQ2DwjCL3GLYSucqiqg25X4VToDIEV0mHRE"/>
+</div>
+</article>
+<!-- ARTICLE ROW 2 -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md items-start">
+<div class="flex-1 flex flex-col justify-between h-full">
+<div>
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-bold tracking-wider uppercase bg-secondary-fixed text-on-secondary-fixed">
+                  AI IN BUSINESS
+                </span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-on-surface-variant">
+                  Zero-Code Stack
+                </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold hover:text-secondary transition-colors cursor-pointer leading-tight mb-space-xs"><a href="article-detail.html?id=ginger-turmeric" class="hover:text-secondary transition-colors">
+                Deploying Multilingual Voice AI for Rural Assam SHGs: A ₹45,000 Setup Blueprint
+              </a></h2>
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                  Capital: ₹45,000
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+                  Payback: 3 Months
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                  Margin: 62%
+                </span>
+</div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-xs">
+<span class="font-medium text-on-surface">By Dr. Hemanta Brahma</span>
+<span>•</span>
+<span>Oct 24, 2026</span>
+<span>•</span>
+<span>5 min read</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed mb-space-md">
+                Overcoming regional script literacy barriers by connecting open-source voice AI engines with WhatsApp Audio notes in Bodo, Assamese, and Bengali. Enables women-led handloom collectives to record ledger debits and generate buyer dispatch notes without typing.
+              </p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-headline-sm text-headline-sm text-secondary hover:text-primary transition-colors font-semibold group" href="#">
+<span>View Blueprint Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="w-full md:w-[260px] md:h-[195px] shrink-0 rounded-lg overflow-hidden shadow-sm">
+<img alt="Multilingual voice AI for SHGs" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Indian woman entrepreneur in traditional Bodo dokhona smiling while speaking into a modern smartphone on a clean wooden desk with woven textile sample swatches in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCREG7KmVRYBfEURcmAlWENfmj3yxJ5c9husJnYDZIrZ3N9D_nwtr_8aaYOc2Z2g3Ub_y7czQuqtCYaZlqMMHypTxLvm_1diQ13OhLQ2bJlhDD3qBK5GN3tt12khHJZlQLtMWRClHYtysfwLHtRsyjERvajY_jVnLmtiXc85_cjypai_6fQaSyljTVbYM5k-g71a-T7iFFqQz7qNI602JE6HHLyLirx1p82okYo11I"/>
+</div>
+</article>
+<!-- ARTICLE ROW 3 -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md items-start">
+<div class="flex-1 flex flex-col justify-between h-full">
+<div>
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-bold tracking-wider uppercase bg-secondary-fixed text-on-secondary-fixed">
+                  BUSINESS AUTOMATION
+                </span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-on-surface-variant">
+                  Retail Tech
+                </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold hover:text-secondary transition-colors cursor-pointer leading-tight mb-space-xs"><a href="article-detail.html?id=ginger-turmeric" class="hover:text-secondary transition-colors">
+                Automating Regional Grocery Inventory &amp; Daily WhatsApp Khata for Tier-2/3 Retailers
+              </a></h2>
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                  Capital: ₹25,000 – ₹60,000
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+                  Payback: 2-4 Months
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                  Margin: 45%
+                </span>
+</div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-xs">
+<span class="font-medium text-on-surface">By Ananya Sarma</span>
+<span>•</span>
+<span>Oct 22, 2026</span>
+<span>•</span>
+<span>6 min read</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed mb-space-md">
+                Local Kirana owners across Chirang and Baksa struggle with credit leakage. A localized automated ledger micro-service that syncs barcode scans via Bluetooth scanners directly into scheduled UPI reminder pings via WhatsApp Business API, recovering cash flows 18% faster.
+              </p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-headline-sm text-headline-sm text-secondary hover:text-primary transition-colors font-semibold group" href="#">
+<span>View Blueprint Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="w-full md:w-[260px] md:h-[195px] shrink-0 rounded-lg overflow-hidden shadow-sm">
+<img alt="Grocery inventory automation" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Well organized rural modern retail grocery store counter in Assam showing barcode scanner tablet interface displaying daily sales analytics with neatly stacked local organic commodities" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-Jen8YjYZ8Y1Vy9tIab5rpKSe0e_oVOxkBuhEieoSJjSAb_mjSJfwAPdHuRvJGAGIHVhWC6-TJvpJvrtFdYx56PhzmYxUFneqsnNrghIfQwY9Hj86nq1I2TwIIBtFOoXB1hjhvRwipyIjnLubUlTJIxBcWWnVXHUHkNO2GGw01mBagkdXO2Xqo8p2saT8y2zfWr_bmtlstYR18usTdoD2G2S6cTJmVGT0NWYGMhM"/>
+</div>
+</article>
+<!-- ARTICLE ROW 4 -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md items-start">
+<div class="flex-1 flex flex-col justify-between h-full">
+<div>
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-bold tracking-wider uppercase bg-secondary-fixed text-on-secondary-fixed">
+                  LOW-INVESTMENT
+                </span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-on-surface-variant">
+                  Textile &amp; Handloom
+                </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold hover:text-secondary transition-colors cursor-pointer leading-tight mb-space-xs"><a href="article-detail.html?id=ginger-turmeric" class="hover:text-secondary transition-colors">
+                Setting Up a Commercial Eri Silk Scouring &amp; Spinning Micro-Unit at ₹1.8L Capital
+              </a></h2>
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                  Capital: ₹1,80,000
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+                  Payback: 6 Months
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                  Margin: 42%
+                </span>
+</div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-xs">
+<span class="font-medium text-on-surface">By Mithinga Basumatary</span>
+<span>•</span>
+<span>Oct 20, 2026</span>
+<span>•</span>
+<span>8 min read</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed mb-space-md">
+                Eri (Ahimsa Silk) cocoons are traditionally exported raw to non-regional processors at steep discounts. This blueprint shows how decentralized solar-powered motorized spinning charkhas and eco-friendly alkaline scouring kettles retain 3x value within the Bodoland territorial region.
+              </p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-headline-sm text-headline-sm text-secondary hover:text-primary transition-colors font-semibold group" href="#">
+<span>View Blueprint Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="w-full md:w-[260px] md:h-[195px] shrink-0 rounded-lg overflow-hidden shadow-sm">
+<img alt="Eri silk spinning micro unit" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Detailed close up of pristine golden eri silk cocoons and fine raw spun threads on an ergonomic motorized spinning spindle inside a sunlit studio in Kokrajhar district Assam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKCE3JX-RSbP8qeraFAqk3a_yCI_t7p2nE-MTWvoCfBYs60T7frV5aEw98hIhOv8bcLrfbW7u7_8ECIG9xZ_WALx82AsG6Qklg9eXwRspzUzXJz9eEsWrexKHlWfOrgI1XdKMAX5DPid8j2pJulW8vO8MJwQs_WCVliWxHnvLtCD7hkUNlFhh_d5sJF5BzJhRV0YKLVoMfDM02znNSGsHuOeQAdnuJZS2meIElyq8"/>
+</div>
+</article>
+<!-- ARTICLE ROW 5 -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md items-start">
+<div class="flex-1 flex flex-col justify-between h-full">
+<div>
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-bold tracking-wider uppercase bg-secondary-fixed text-on-secondary-fixed">
+                  DIGITAL TRANSFORMATION
+                </span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-on-surface-variant">
+                  D2C Gourmet
+                </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold hover:text-secondary transition-colors cursor-pointer leading-tight mb-space-xs"><a href="article-detail.html?id=ginger-turmeric" class="hover:text-secondary transition-colors">
+                Packaged Wild Honey &amp; Black Rice Value-Addition: Unit Economics and Pan-India D2C Logistics
+              </a></h2>
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                  Capital: ₹85,000 – ₹1.5L
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+                  Payback: 4 Months
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                  Margin: 52%
+                </span>
+</div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-xs">
+<span class="font-medium text-on-surface">By Jwngsar Narzary</span>
+<span>•</span>
+<span>Oct 18, 2026</span>
+<span>•</span>
+<span>6 min read</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed mb-space-md">
+                Unpasteurized forest honey from Manas biosphere buffer villages commands ₹950/kg in Delhi and Mumbai organic supermarkets. Complete blueprint detailing food-grade vacuum sealing, NABL heavy-metal lab testing protocols, and air-cargo bulk shipping economics from Guwahati.
+              </p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-headline-sm text-headline-sm text-secondary hover:text-primary transition-colors font-semibold group" href="#">
+<span>View Blueprint Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="w-full md:w-[260px] md:h-[195px] shrink-0 rounded-lg overflow-hidden shadow-sm">
+<img alt="Wild honey and black rice value addition" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Elegant glass jars filled with raw golden forest honey beside rustic kraft paper pouches of aromatic black rice grains on a polished slate countertop bathed in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBljFO_XzN3hKH6WFmp0P4YcC8xqtah7QZ40sVs3Z4cAomr5vVbVyOJSF57ynzsGAhnnbZOr8fDXTBKDIAQuX_kMJCryY3yYkBD1Jne0_Qi3jKW6-oWwGjFw4L-2Jxz-Dr7jjRX-6rUx7JL7GJeeTniV8jY_X7fPmDk0Q2wbVMGF-xgXLNkSyYE8fJoh32nIoqYavokm5F5NSoLhs0sLjPDPpQtW35acw6ViJ_ODcc"/>
+</div>
+</article>
+<!-- ARTICLE ROW 6 -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md items-start">
+<div class="flex-1 flex flex-col justify-between h-full">
+<div>
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-bold tracking-wider uppercase bg-secondary-fixed text-on-secondary-fixed">
+                  INDUSTRY OPPORTUNITIES
+                </span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-on-surface-variant">
+                  Clean Energy
+                </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold hover:text-secondary transition-colors cursor-pointer leading-tight mb-space-xs"><a href="article-detail.html?id=ginger-turmeric" class="hover:text-secondary transition-colors">
+                Solar Irrigation-as-a-Service for Boro Paddy Cultivators: CapEx, Subsidies &amp; Payback
+              </a></h2>
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                  Capital: ₹2.1L – ₹4.0L
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+                  Payback: 8-10 Months
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                  Margin: 48%
+                </span>
+</div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-xs">
+<span class="font-medium text-on-surface">By Pranjal Kalita</span>
+<span>•</span>
+<span>Oct 16, 2026</span>
+<span>•</span>
+<span>7 min read</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed mb-space-md">
+                Winter boro paddy requires heavy water pumping traditionally powered by costly diesel generator sets. A trailer-mounted 5HP solar pump rental enterprise providing metered hourly groundwater delivery at 40% cheaper operational cost than diesel alternatives.
+              </p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-headline-sm text-headline-sm text-secondary hover:text-primary transition-colors font-semibold group" href="#">
+<span>View Blueprint Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="w-full md:w-[260px] md:h-[195px] shrink-0 rounded-lg overflow-hidden shadow-sm">
+<img alt="Solar irrigation micro enterprise" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="High quality photography of a portable trailer mounted solar photovoltaic pump irrigating lush green terraced paddy fields in Bodoland region with clear blue sky and mountains in distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHT1RfWg_YUneiNhlWCnXT1BCHXfghHO7zNfJyZny1rtFzUmcscqR0dZn0P54P-h07Bj4R0aC5PBIHo9sDIwuumvVIb7Qoo8ACIk1yx1rIwq802VBXOMh_DSpusHDUgKruZBMbMC-lG3tz8b5rEuPHHHFVGUaJ547KDieQ_ABK0FQVSkwVpE1-QcE4TY596PCQPI9agKTfZDRSTN3Np_Wvai8zPt8a3NHxHdcfnBk"/>
+</div>
+</article>
+<!-- ARTICLE ROW 7 -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-space-md items-start">
+<div class="flex-1 flex flex-col justify-between h-full">
+<div>
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-bold tracking-wider uppercase bg-secondary-fixed text-on-secondary-fixed">
+                  LOW-INVESTMENT
+                </span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-high text-on-surface-variant">
+                  Bio-Waste Wealth
+                </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold hover:text-secondary transition-colors cursor-pointer leading-tight mb-space-xs"><a href="article-detail.html?id=ginger-turmeric" class="hover:text-secondary transition-colors">
+                Areca Palm Leaf Plate Manufacturing: Machine Selection, Power Needs &amp; Export Aggregation
+              </a></h2>
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                  Capital: ₹70,000 – ₹1.2L
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+                  Payback: 3-5 Months
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                  Margin: 36%
+                </span>
+</div>
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-xs">
+<span class="font-medium text-on-surface">By Rupa Brahma</span>
+<span>•</span>
+<span>Oct 14, 2026</span>
+<span>•</span>
+<span>5 min read</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed mb-space-md">
+                Assam possesses abundant areca betel nut plantations where sheaths are discarded as agricultural debris. A single operator hydraulic press converts washed leaves into biodegradable dinnerware in Kokrajhar with strong corporate ESG purchase contracts in Guwahati.
+              </p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-headline-sm text-headline-sm text-secondary hover:text-primary transition-colors font-semibold group" href="#">
+<span>View Blueprint Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="w-full md:w-[260px] md:h-[195px] shrink-0 rounded-lg overflow-hidden shadow-sm">
+<img alt="Areca leaf plate unit" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Aesthetic product styling of biodegradable areca palm leaf plates bowls and platters cleanly stacked on natural textured timber background with betel nut trees visible outside the workshop window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAryoDOM5fqk1m_uVln-wUsrmElxn5R9MY927ylN6S6ZLWJigtgpEDsLMKjmC8Bt8rkFn3U5xuwiZ65VAvlVxHhZbI_sob-1vk5BQorU2Yaef2fxZxdF5g59ulQ8TMQzCirPxqAZWnRP_-C_tIb_H6orWVP8-UIImpobh1ln1j3cGFFRtu1DSuaMBMkV-9Au313k-L5qdWqg0SIP6UK3EhUimuyZcY1ScDd9IKorTs"/>
+</div>
+</article>
+<!-- Pagination Bar (Screen-3 Master UI Match) -->
+<nav aria-label="Pagination Navigation" class="flex items-center justify-center gap-space-xs py-space-lg">
+<button aria-label="Previous Page" class="w-9 h-9 rounded bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button aria-current="page" class="w-9 h-9 rounded bg-secondary text-on-secondary font-headline-sm text-headline-sm font-bold flex items-center justify-center shadow-sm cursor-pointer">
+            1
+          </button>
+<button class="w-9 h-9 rounded bg-surface-container-low text-on-surface font-headline-sm text-headline-sm hover:bg-surface-container-high transition-colors flex items-center justify-center cursor-pointer">
+            2
+          </button>
+<button class="w-9 h-9 rounded bg-surface-container-low text-on-surface font-headline-sm text-headline-sm hover:bg-surface-container-high transition-colors flex items-center justify-center cursor-pointer">
+            3
+          </button>
+<span class="px-space-xs text-on-surface-variant font-bold">...</span>
+<button class="w-9 h-9 rounded bg-surface-container-low text-on-surface font-headline-sm text-headline-sm hover:bg-surface-container-high transition-colors flex items-center justify-center cursor-pointer">
+            6
+          </button>
+<button aria-label="Next Page" class="w-9 h-9 rounded bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</nav>
+</main>
+</div>
+</div>
+    </div>
+  </div>
+</main>
+
+<footer class="w-full bg-primary text-inverse-on-surface border-t border-primary-container mt-space-xl">
+  <div class="max-w-[1160px] mx-auto px-gutter-sm lg:px-gutter pt-space-xl pb-space-lg">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter pb-space-xl border-b border-primary-container">
+      <div class="lg:col-span-4 flex flex-col">
+        <div class="flex items-center gap-space-sm mb-space-md">
+          <span class="w-2.5 h-7 bg-secondary rounded-DEFAULT"></span>
+          <div class="flex flex-col">
+            <span class="font-headline-md text-headline-md tracking-tight text-on-primary leading-none font-bold">BODOLAND</span>
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed leading-none mt-1">Entrepreneurs</span>
+          </div>
+        </div>
+        <p class="font-body-md text-body-md text-surface-variant mb-space-md leading-relaxed pr-space-md">
+          Dedicated to documenting, inspiring, and connecting the pioneers reshaping Bodoland Territorial Region and Northeast India through sustainable enterprise and visionary leadership.
+        </p>
+        <div class="flex items-center gap-space-sm">
+          <span class="material-symbols-outlined text-secondary-fixed text-[18px]">verified</span>
+          <span class="font-label-md text-label-md text-primary-fixed">Independent Journalistic Trust</span>
+        </div>
+      </div>
+      <div class="lg:col-span-2 flex flex-col">
+        <h4 class="font-headline-sm text-headline-sm text-on-primary mb-space-md flex items-center gap-space-xs font-bold">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span><span>Explore</span>
+        </h4>
+        <ul class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+          <li><a class="text-surface-variant hover:text-on-primary transition-colors" href="stories.html">Stories</a></li>
+          <li><a class="text-surface-variant hover:text-on-primary transition-colors" href="young-entrepreneurs.html">Young Entrepreneurs</a></li>
+          <li><a class="text-surface-variant hover:text-on-primary transition-colors" href="business-ideas.html">Business Ideas</a></li>
+          <li><a class="text-surface-variant hover:text-on-primary transition-colors" href="learning.html">Learning Hub</a></li>
+          <li><a class="text-surface-variant hover:text-on-primary transition-colors" href="insights.html">Policy Insights</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2 flex flex-col">
+        <h4 class="font-headline-sm text-headline-sm text-on-primary mb-space-md flex items-center gap-space-xs font-bold">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span><span>Quick Links</span>
+        </h4>
+        <ul class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+          <li><a class="text-surface-variant hover:text-on-primary transition-colors" href="about.html">About Us</a></li>
+          <li><a class="text-surface-variant hover:text-on-primary transition-colors" href="write-for-us.html">Submit a Pitch</a></li>
+          <li><a class="text-surface-variant hover:text-on-primary transition-colors" href="contact.html">Contact &amp; Bureau</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4 flex flex-col">
+        <h4 class="font-headline-sm text-headline-sm text-on-primary mb-space-xs font-bold">Stay Informed</h4>
+        <p class="font-body-sm text-body-sm text-surface-variant mb-space-md">Receive weekly deep-dives into Northeast startup venture funding, agro-tech breakthroughs, and policy updates directly in your inbox.</p>
+        <div class="flex w-full items-stretch">
+          <input class="flex-1 bg-tertiary-container border border-tertiary-fixed-dim/30 px-space-md py-space-sm text-on-primary placeholder:text-surface-variant/60 font-body-sm text-body-sm rounded-l-lg focus:outline-none focus:border-secondary-fixed transition-colors" placeholder="Enter your business email" type="email"/>
+          <button class="bg-secondary hover:bg-secondary/90 text-on-secondary px-space-md py-space-sm font-label-md text-label-md rounded-r-lg transition-colors flex items-center justify-center cursor-pointer" type="button" onclick="alert('Subscribed successfully!');">
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-surface-variant">
+      <p class="text-center md:text-left">© 2026 Bodoland Entrepreneurs Editorial Publication. All rights reserved.</p>
+      <div class="flex items-center gap-space-md">
+        <a class="hover:text-on-primary transition-colors" href="about.html">About</a>
+        <span class="text-primary-container">•</span>
+        <a class="hover:text-on-primary transition-colors" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function initNavigationController() {
+    // 1. Dynamic Date Update
+    const dateEls = document.querySelectorAll('.top-bar-date');
+    if (dateEls.length) {
+      const opts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const formatted = new Date().toLocaleDateString('en-US', opts);
+      dateEls.forEach(el => el.textContent = formatted);
+    }
+
+    // 2. Mobile Drawer Toggle
+    const mobileToggle = document.getElementById('mobile-menu-toggle-btn');
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    if (mobileToggle && mobileDrawer) {
+      mobileToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isHidden = mobileDrawer.classList.contains('hidden');
+        if (isHidden) {
+          mobileDrawer.classList.remove('hidden');
+          mobileToggle.setAttribute('aria-expanded', 'true');
+        } else {
+          mobileDrawer.classList.add('hidden');
+          mobileToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // 3. Desktop Dropdown Click & Keyboard Navigation
+    const dropdownItems = document.querySelectorAll('.nav-dropdown-item');
+    dropdownItems.forEach((item) => {
+      const btn = item.querySelector('.nav-btn');
+      const menu = item.querySelector('.dropdown-menu');
+      if (!btn || !menu) return;
+
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = menu.classList.contains('opacity-100');
+        // Close other dropdowns
+        dropdownItems.forEach((other) => {
+          if (other !== item) {
+            const otherMenu = other.querySelector('.dropdown-menu');
+            const otherBtn = other.querySelector('.nav-btn');
+            if (otherMenu) otherMenu.classList.remove('opacity-100', 'visible', '!opacity-100', '!visible');
+            if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        if (isOpen) {
+          menu.classList.remove('opacity-100', 'visible', '!opacity-100', '!visible');
+          btn.setAttribute('aria-expanded', 'false');
+        } else {
+          menu.classList.add('!opacity-100', '!visible');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      dropdownItems.forEach((item) => {
+        const menu = item.querySelector('.dropdown-menu');
+        const btn = item.querySelector('.nav-btn');
+        if (menu && !item.contains(e.target)) {
+          menu.classList.remove('!opacity-100', '!visible');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      if (mobileDrawer && mobileToggle && !mobileDrawer.contains(e.target) && !mobileToggle.contains(e.target)) {
+        mobileDrawer.classList.add('hidden');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Keyboard Accessibility: Escape key closes all dropdowns & drawer
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        dropdownItems.forEach((item) => {
+          const menu = item.querySelector('.dropdown-menu');
+          const btn = item.querySelector('.nav-btn');
+          if (menu) menu.classList.remove('!opacity-100', '!visible');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+        if (mobileDrawer) {
+          mobileDrawer.classList.add('hidden');
+          if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+
+    // 4. URL Parameter category filter support
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryParam = urlParams.get('category');
+    if (categoryParam) {
+      const pills = document.querySelectorAll('.filter-pill');
+      pills.forEach((pill) => {
+        const pillText = pill.textContent.trim().toLowerCase();
+        if (pillText === categoryParam.toLowerCase() || pillText.includes(categoryParam.toLowerCase())) {
+          pill.click();
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>

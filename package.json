@@ -1,0 +1,19 @@
+{
+  "name": "bodoland-entrepreneurs-platform",
+  "version": "1.0.0",
+  "description": "Bodoland Entrepreneurs Media Platform - Stitch UI Design System",
+  "scripts": {
+    "start": "npx -y serve . -l 3000",
+    "export": "node export-screens.js"
+  },
+  "keywords": [
+    "bodoland",
+    "entrepreneurs",
+    "media",
+    "platform",
+    "stitch",
+    "ui"
+  ],
+  "author": "",
+  "license": "ISC"
+}

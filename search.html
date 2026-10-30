@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-error-container":"#93000a","tertiary-fixed":"#cbead5","outline-variant":"#c0c9c0","surface-container-lowest":"#ffffff","surface-dim":"#d3daef","secondary":"#006d30","primary-container":"#083e23","on-primary":"#ffffff","surface-container":"#e9edff","on-secondary":"#ffffff","on-tertiary-fixed":"#052013","inverse-surface":"#293040","tertiary-container":"#203b2c","on-background":"#141b2b","on-primary-fixed":"#00210f","secondary-container":"#92f5a4","error":"#ba1a1a","surface-variant":"#dce2f7","secondary-fixed-dim":"#79db8d","primary-fixed":"#b9efc8","on-secondary-fixed-variant":"#005323","inverse-on-surface":"#edf0ff","on-primary-container":"#77aa86","on-tertiary-container":"#87a592","primary":"#002613","surface-container-low":"#f1f3ff","surface":"#f9f9ff","surface-container-high":"#e1e8fd","outline":"#717971","inverse-primary":"#9ed3ad","surface-bright":"#f9f9ff","on-surface":"#141b2b","surface-tint":"#376849","surface-container-highest":"#dce2f7","tertiary-fixed-dim":"#afceba","error-container":"#ffdad6","on-tertiary-fixed-variant":"#314d3d","on-primary-fixed-variant":"#1e5033","secondary-fixed":"#95f8a7","on-tertiary":"#ffffff","tertiary":"#092518","background":"#f9f9ff","on-secondary-fixed":"#00210a","on-secondary-container":"#007233","on-surface-variant":"#414942","primary-fixed-dim":"#9ed3ad","on-error":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","gutter":"2rem","space-md":"1rem","space-sm":"0.5rem","gutter-sm":"1rem","margin-md":"1.5rem","margin-lg":"2rem","space-lg":"1.5rem","margin":"1rem","space-xs":"0.25rem"},"fontFamily":{"headline-xl-mobile":["Manrope"],"headline-sm":["Manrope"],"body-sm":["Inter"],"headline-xl":["Manrope"],"headline-2xl-mobile":["Manrope"],"headline-lg":["Manrope"],"label-sm":["Inter"],"label-md":["Inter"],"headline-md":["Manrope"],"headline-2xl":["Manrope"],"body-lg":["Inter"],"body-md":["Inter"]},"fontSize":{"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"19px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-2xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-2xl":["44px",{"lineHeight":"52px","letterSpacing":"-0.025em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest" id="site-header">
+  <!-- Top Utility Bar (Dynamic Date, Language Selector, Social Links) -->
+  <div class="bg-primary text-on-primary border-b border-primary-container">
+    <div class="max-w-[1200px] mx-auto px-gutter-sm lg:px-gutter h-10 flex items-center justify-between font-body-sm text-body-sm">
+      <div class="flex items-center gap-space-md">
+        <span class="flex items-center gap-space-xs font-label-sm text-label-sm text-surface-variant">
+          <span class="material-symbols-outlined text-[16px]">calendar_today</span>
+          <span class="top-bar-date">Thursday, October 29, 2026</span>
+        </span>
+        <span class="hidden sm:inline text-outline-variant">|</span>
+        <span class="hidden sm:inline font-body-sm text-body-sm text-surface-variant">The Voice of Northeast Entrepreneurship</span>
+      </div>
+      <div class="flex items-center gap-space-md">
+        <!-- Language Selector -->
+        <div class="flex items-center gap-1 text-surface-variant font-label-sm text-[12px]">
+          <span class="material-symbols-outlined text-[15px]">language</span>
+          <select aria-label="Select Language" class="bg-transparent text-surface-variant hover:text-on-primary border-none cursor-pointer text-[12px] font-label-sm focus:outline-none pr-1">
+            <option value="en" class="bg-primary text-on-primary">English</option>
+            <option value="brx" class="bg-primary text-on-primary">बड़ो (Bodo)</option>
+            <option value="as" class="bg-primary text-on-primary">অসমীয়া (Assamese)</option>
+          </select>
+        </div>
+        <div class="h-4 w-px bg-outline hidden sm:block"></div>
+        <!-- Social Media Icons (X, Instagram, Facebook) -->
+        <div class="flex items-center gap-1.5 text-surface-variant">
+          <a aria-label="X" class="hover:text-secondary-fixed transition-colors p-1 flex items-center" href="https://x.com" target="_blank" rel="noopener noreferrer">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a aria-label="Instagram" class="hover:text-secondary-fixed transition-colors p-1 flex items-center" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a aria-label="Facebook" class="hover:text-secondary-fixed transition-colors p-1 flex items-center" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+        <div class="h-4 w-px bg-outline hidden md:block"></div>
+        <a class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed hover:text-on-primary transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[16px]">account_circle</span>Login / Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Header & Main Navigation Bar -->
+  <div class="shadow-[0_1px_8px_rgba(0,0,0,0.04)] relative">
+    <div class="max-w-[1200px] mx-auto px-gutter-sm lg:px-gutter h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <div class="flex items-center gap-space-md">
+        <a class="flex items-center gap-space-sm text-decoration-none group" data-path="home" href="index.html">
+          <img alt="Bodoland Entrepreneurs Profile Logo" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VngNN9LxnZKnBuUMCGIDwfzuIAxN0oT6Q-iruoar0VyXowhuq6DFass1fwD4s6ardYPwlyjA7B8Mvp9KBnZYJQ4WvohXCRAq3GM1MKRd7xULHoPXWGKqPp7VaP8ypF5iSlZ51pXdif0w-MKDXGy1c1xuQxeobbbJAUAZIGjlPgxQjzgBA3rnTFO3rZop5IHIAvqYXGhNCzzoBWilyMlWfAGaSEH_OPIWEUL3n1aLQ5HA6R_yXZuCvS6fU"/>
+          <div class="flex flex-col">
+            <span class="font-headline-md text-headline-md text-primary font-bold tracking-tight group-hover:text-secondary transition-colors">Bodoland Entrepreneurs</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest text-[9px] leading-tight">Inspire • Innovate • Elevate</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden xl:flex items-center gap-space-sm h-full" id="desktop-nav-bar" aria-label="Main Navigation">
+        <!-- 1. Home (Direct link without dropdown) -->
+        <a class="nav-item-link h-full flex items-center px-3 font-headline-sm text-headline-sm transition-colors text-on-surface-variant hover:text-secondary" data-nav="home" href="index.html">Home</a>
+
+        <!-- 2. Stories Dropdown -->
+        <div class="nav-dropdown-item relative group h-full flex items-center" data-nav="stories">
+          <button class="nav-btn h-full flex items-center gap-1 px-3 font-headline-sm text-headline-sm transition-colors text-on-surface-variant group-hover:text-secondary focus:outline-none" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Stories</span>
+            <span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180">keyboard_arrow_down</span>
+          </button>
+          <div class="dropdown-menu absolute left-0 top-[calc(100%-4px)] w-60 py-2 bg-surface-container-lowest border border-outline-variant/50 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="all-stories" href="stories.html">All Stories</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="startup-stories" href="stories-startup-stories.html">Startup Stories</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="local-businesses" href="stories-local-businesses.html">Local Businesses</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="founders-journey" href="stories-founders-journey.html">Founder's Journey</a>
+          </div>
+        </div>
+
+        <!-- 3. Young Entrepreneurs Dropdown -->
+        <div class="nav-dropdown-item relative group h-full flex items-center" data-nav="young-entrepreneurs">
+          <button class="nav-btn h-full flex items-center gap-1 px-3 font-headline-sm text-headline-sm transition-colors text-on-surface-variant group-hover:text-secondary focus:outline-none" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Young Entrepreneurs</span>
+            <span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180">keyboard_arrow_down</span>
+          </button>
+          <div class="dropdown-menu absolute left-0 top-[calc(100%-4px)] w-64 py-2 bg-surface-container-lowest border border-outline-variant/50 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="all-young-entrepreneurs" href="young-entrepreneurs.html">All Young Entrepreneurs</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="emerging-leaders" href="young-entrepreneurs-emerging-leaders.html">Emerging Business Leaders</a>
+          </div>
+        </div>
+
+        <!-- 4. Business Ideas Dropdown -->
+        <div class="nav-dropdown-item relative group h-full flex items-center" data-nav="business-ideas">
+          <button class="nav-btn h-full flex items-center gap-1 px-3 font-headline-sm text-headline-sm transition-colors text-on-surface-variant group-hover:text-secondary focus:outline-none" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Business Ideas</span>
+            <span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180">keyboard_arrow_down</span>
+          </button>
+          <div class="dropdown-menu absolute left-0 top-[calc(100%-4px)] w-64 py-2 bg-surface-container-lowest border border-outline-variant/50 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="all-business-ideas" href="business-ideas.html">All Business Ideas</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="low-investment" href="business-ideas-low-investment.html">Low-Investment Business Ideas</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="ai-in-business" href="business-ideas-ai-in-business.html">AI in Business</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="business-automation" href="business-ideas-business-automation.html">Business Automation</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="digital-transformation" href="business-ideas-digital-transformation.html">Digital Transformation</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="industry-opportunities" href="business-ideas-industry-opportunities.html">Industry Opportunities</a>
+          </div>
+        </div>
+
+        <!-- 5. Learning Dropdown -->
+        <div class="nav-dropdown-item relative group h-full flex items-center" data-nav="learning">
+          <button class="nav-btn h-full flex items-center gap-1 px-3 font-headline-sm text-headline-sm transition-colors text-on-surface-variant group-hover:text-secondary focus:outline-none" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Learning</span>
+            <span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180">keyboard_arrow_down</span>
+          </button>
+          <div class="dropdown-menu absolute left-0 top-[calc(100%-4px)] w-60 py-2 bg-surface-container-lowest border border-outline-variant/50 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="all-learning" href="learning.html">All Learning Resources</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="marketing" href="learning-marketing.html">Marketing</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="sales" href="learning-sales.html">Sales</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="finance" href="learning-finance.html">Finance</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="branding" href="learning-branding.html">Branding</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="business-planning" href="learning-business-planning.html">Business Planning</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="practical-guides" href="learning-practical-guides.html">Practical Guides</a>
+          </div>
+        </div>
+
+        <!-- 6. Insights Dropdown (right-aligned to avoid clipping) -->
+        <div class="nav-dropdown-item relative group h-full flex items-center" data-nav="insights">
+          <button class="nav-btn h-full flex items-center gap-1 px-3 font-headline-sm text-headline-sm transition-colors text-on-surface-variant group-hover:text-secondary focus:outline-none" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Insights</span>
+            <span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180">keyboard_arrow_down</span>
+          </button>
+          <div class="dropdown-menu absolute right-0 top-[calc(100%-4px)] w-60 py-2 bg-surface-container-lowest border border-outline-variant/50 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="all-insights" href="insights.html">All Insights</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="founder-case-files" href="insights-founder-case-files.html">Founder Case Files</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="business-brief" href="insights-business-brief.html">Business Brief</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="market-intelligence" href="insights-market-intelligence.html">Market Intelligence</a>
+            <a class="dropdown-link block px-4 py-2 font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low hover:text-secondary transition-colors " data-subnav="growth-reports" href="insights-growth-reports.html">Growth Reports</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Right Utility Actions -->
+      <div class="flex items-center gap-space-sm">
+        <a aria-label="Search Articles" class="p-space-xs text-on-surface-variant hover:text-secondary transition-colors flex items-center justify-center" data-path="search" href="search.html">
+          <span class="material-symbols-outlined text-[24px]">search</span>
+        </a>
+        <button aria-label="Open Mobile Navigation" id="mobile-menu-toggle-btn" class="xl:hidden p-space-xs text-on-surface-variant hover:text-secondary transition-colors flex items-center justify-center focus:outline-none" type="button" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="material-symbols-outlined text-[26px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Accordion Navigation -->
+    <div class="hidden xl:hidden bg-surface-container-lowest border-t border-outline-variant/40 px-gutter-sm py-space-md max-h-[calc(100vh-120px)] overflow-y-auto" id="mobile-drawer">
+      <div class="flex flex-col gap-space-sm font-headline-sm">
+        <a class="py-space-xs text-on-surface hover:text-secondary transition-colors" data-nav="home" href="index.html">Home</a>
+
+        <!-- Stories Accordion -->
+        <details class="group border-b border-outline-variant/20 pb-2" data-nav="stories" >
+          <summary class="flex items-center justify-between py-space-xs cursor-pointer list-none text-on-surface hover:text-secondary transition-colors">
+            <span>Stories</span>
+            <span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="pl-4 py-1 flex flex-col gap-1 border-l-2 border-secondary/40 my-1">
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="all-stories" href="stories.html">All Stories</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="startup-stories" href="stories-startup-stories.html">Startup Stories</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="local-businesses" href="stories-local-businesses.html">Local Businesses</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="founders-journey" href="stories-founders-journey.html">Founder's Journey</a>
+          </div>
+        </details>
+
+        <!-- Young Entrepreneurs Accordion -->
+        <details class="group border-b border-outline-variant/20 pb-2" data-nav="young-entrepreneurs" >
+          <summary class="flex items-center justify-between py-space-xs cursor-pointer list-none text-on-surface hover:text-secondary transition-colors">
+            <span>Young Entrepreneurs</span>
+            <span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="pl-4 py-1 flex flex-col gap-1 border-l-2 border-secondary/40 my-1">
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="all-young-entrepreneurs" href="young-entrepreneurs.html">All Young Entrepreneurs</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="emerging-leaders" href="young-entrepreneurs-emerging-leaders.html">Emerging Business Leaders</a>
+          </div>
+        </details>
+
+        <!-- Business Ideas Accordion -->
+        <details class="group border-b border-outline-variant/20 pb-2" data-nav="business-ideas" >
+          <summary class="flex items-center justify-between py-space-xs cursor-pointer list-none text-on-surface hover:text-secondary transition-colors">
+            <span>Business Ideas</span>
+            <span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="pl-4 py-1 flex flex-col gap-1 border-l-2 border-secondary/40 my-1">
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="all-business-ideas" href="business-ideas.html">All Business Ideas</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="low-investment" href="business-ideas-low-investment.html">Low-Investment Business Ideas</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="ai-in-business" href="business-ideas-ai-in-business.html">AI in Business</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="business-automation" href="business-ideas-business-automation.html">Business Automation</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="digital-transformation" href="business-ideas-digital-transformation.html">Digital Transformation</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="industry-opportunities" href="business-ideas-industry-opportunities.html">Industry Opportunities</a>
+          </div>
+        </details>
+
+        <!-- Learning Accordion -->
+        <details class="group border-b border-outline-variant/20 pb-2" data-nav="learning" >
+          <summary class="flex items-center justify-between py-space-xs cursor-pointer list-none text-on-surface hover:text-secondary transition-colors">
+            <span>Learning</span>
+            <span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="pl-4 py-1 flex flex-col gap-1 border-l-2 border-secondary/40 my-1">
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="all-learning" href="learning.html">All Learning Resources</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="marketing" href="learning-marketing.html">Marketing</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="sales" href="learning-sales.html">Sales</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="finance" href="learning-finance.html">Finance</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="branding" href="learning-branding.html">Branding</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="business-planning" href="learning-business-planning.html">Business Planning</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="practical-guides" href="learning-practical-guides.html">Practical Guides</a>
+          </div>
+        </details>
+
+        <!-- Insights Accordion -->
+        <details class="group border-b border-outline-variant/20 pb-2" data-nav="insights" >
+          <summary class="flex items-center justify-between py-space-xs cursor-pointer list-none text-on-surface hover:text-secondary transition-colors">
+            <span>Insights</span>
+            <span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+          </summary>
+          <div class="pl-4 py-1 flex flex-col gap-1 border-l-2 border-secondary/40 my-1">
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="all-insights" href="insights.html">All Insights</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="founder-case-files" href="insights-founder-case-files.html">Founder Case Files</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="business-brief" href="insights-business-brief.html">Business Brief</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="market-intelligence" href="insights-market-intelligence.html">Market Intelligence</a>
+            <a class="py-1 font-body-sm text-body-sm transition-colors text-on-surface-variant hover:text-secondary" data-subnav="growth-reports" href="insights-growth-reports.html">Growth Reports</a>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</header><main class="w-full pt-[100px] bg-surface min-h-[calc(100vh-100px)]"><div class="flex flex-col w-full">
+<div class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-[1160px] mx-auto px-gutter-sm lg:px-gutter">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-secondary">
+<span class="material-symbols-outlined text-[16px]">travel_explore</span>
+<span class="tracking-wider uppercase">Editorial Knowledge Search</span>
+</div>
+<form class="flex flex-col md:flex-row items-stretch gap-space-sm bg-surface-container-lowest p-space-xs rounded-xl shadow-sm" onsubmit="return false;">
+<div class="relative flex-1 flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[22px]">search</span>
+<input aria-label="Search inquiry" class="w-full pl-12 pr-10 py-space-md bg-transparent font-headline-md text-headline-md text-on-surface focus:outline-none placeholder:text-outline" id="search-input" type="text" value="agritech assam"/>
+<button aria-label="Clear search input" class="absolute right-space-sm text-outline hover:text-on-surface p-space-xs flex items-center justify-center transition-colors" onclick="document.getElementById('search-input').value=''; document.getElementById('search-input').focus();" type="button">
+<span class="material-symbols-outlined text-[20px]">cancel</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<select class="appearance-none bg-surface-container text-on-surface font-label-md text-label-md pl-space-md pr-10 py-space-md rounded-lg focus:outline-none cursor-pointer">
+<option value="all">All Categories</option>
+<option value="stories">Stories</option>
+<option value="business-ideas">Business Ideas</option>
+<option value="young-entrepreneurs">Young Entrepreneurs</option>
+<option value="learning">Learning Hub</option>
+<option value="insights">Insights &amp; Policy</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-headline-sm px-space-xl py-space-md rounded-lg flex items-center justify-center gap-space-xs transition-colors" type="submit">
+<span>Search</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</form>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span>Showing <strong class="text-on-surface font-semibold">14</strong> results for <span class="text-secondary font-semibold">“agritech assam”</span></span>
+</div>
+<div class="flex items-center gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<span>Sort by:</span>
+<div class="relative inline-block">
+<select class="bg-surface text-on-surface font-semibold focus:outline-none cursor-pointer pr-space-lg">
+<option>Most Relevant</option>
+<option>Latest Published</option>
+<option>Highest Impact</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-[16px] text-on-surface-variant">unfold_more</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-[1160px] mx-auto px-gutter-sm lg:px-gutter py-space-xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-primary flex items-center gap-space-xs">
+<span class="w-1.5 h-4 bg-secondary rounded-DEFAULT"></span>
+<span>Filter by Category</span>
+</h3>
+<button class="font-label-sm text-label-sm text-secondary hover:underline" type="button">Reset</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 accent-secondary rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Startup Stories</span>
+</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-space-xs py-0.5 rounded-full text-on-surface-variant">6</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 accent-secondary rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Business Ideas</span>
+</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-space-xs py-0.5 rounded-full text-on-surface-variant">4</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 accent-secondary rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Young Entrepreneurs</span>
+</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-space-xs py-0.5 rounded-full text-on-surface-variant">2</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 accent-secondary rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Learning Hub</span>
+</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-space-xs py-0.5 rounded-full text-on-surface-variant">2</span>
+</label>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col gap-space-md shadow-sm">
+<h3 class="font-headline-md text-headline-md text-primary flex items-center gap-space-xs">
+<span class="w-1.5 h-4 bg-secondary rounded-DEFAULT"></span>
+<span>Date Range</span>
+</h3>
+<div class="flex flex-col gap-space-sm">
+<label class="flex items-center gap-space-sm p-space-xs hover:bg-surface-container-low rounded-lg cursor-pointer transition-colors">
+<input class="w-4 h-4 accent-secondary" name="date-range" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface">Past 24 Hours</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-xs hover:bg-surface-container-low rounded-lg cursor-pointer transition-colors">
+<input class="w-4 h-4 accent-secondary" name="date-range" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface">Past Month</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-xs hover:bg-surface-container-low rounded-lg cursor-pointer transition-colors">
+<input class="w-4 h-4 accent-secondary" name="date-range" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface">Past Year</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-xs hover:bg-surface-container-low rounded-lg cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 accent-secondary" name="date-range" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface font-semibold">Any Time</span>
+</label>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col gap-space-md shadow-sm">
+<h3 class="font-headline-md text-headline-md text-primary flex items-center gap-space-xs">
+<span class="w-1.5 h-4 bg-secondary rounded-DEFAULT"></span>
+<span>Popular Search Terms</span>
+</h3>
+<div class="flex flex-wrap gap-space-xs">
+<a class="bg-surface-container hover:bg-secondary hover:text-on-secondary text-on-surface-variant font-label-md text-label-md px-space-md py-space-xs rounded-full transition-colors" href="#">
+              #ColdStorage
+            </a>
+<a class="bg-surface-container hover:bg-secondary hover:text-on-secondary text-on-surface-variant font-label-md text-label-md px-space-md py-space-xs rounded-full transition-colors" href="#">
+              #SolarIrrigation
+            </a>
+<a class="bg-surface-container hover:bg-secondary hover:text-on-secondary text-on-surface-variant font-label-md text-label-md px-space-md py-space-xs rounded-full transition-colors" href="#">
+              #EriSilk
+            </a>
+<a class="bg-surface-container hover:bg-secondary hover:text-on-secondary text-on-surface-variant font-label-md text-label-md px-space-md py-space-xs rounded-full transition-colors" href="#">
+              #GSTCompliance
+            </a>
+<a class="bg-surface-container hover:bg-secondary hover:text-on-secondary text-on-surface-variant font-label-md text-label-md px-space-md py-space-xs rounded-full transition-colors" href="#">
+              #MushroomFarming
+            </a>
+</div>
+</div>
+<div class="bg-tertiary-container text-inverse-on-surface p-space-lg rounded-xl flex flex-col gap-space-sm shadow-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-secondary/20 rounded-full blur-2xl pointer-events-none"></div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Special Report</span>
+<h4 class="font-headline-md text-headline-md text-on-primary leading-snug">BTR AgriTech Venture Landscape 2026</h4>
+<p class="font-body-sm text-body-sm text-surface-variant">Download our verified dossier covering 32 active agro-startups in Kokrajhar, Chirang, and Baksa.</p>
+<a class="mt-space-xs inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary-fixed hover:text-on-primary transition-colors" href="#">
+<span>Access Dossier</span>
+<span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+</a>
+</div>
+</aside>
+<main class="lg:col-span-8 flex flex-col gap-space-lg">
+<article class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col sm:flex-row gap-space-lg hover:shadow-md transition-shadow">
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold">
+                  YOUNG ENTREPRENEURS
+                </span>
+<span class="font-body-sm text-body-sm text-outline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oct 25, 2026</span>
+<span class="font-body-sm text-body-sm text-outline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">5 min read</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary hover:text-secondary cursor-pointer transition-colors leading-snug">
+                How 21-Year-Old CIT Kokrajhar Student Dhruba Brahma Engineered Autonomous Soil Sensors for 65 Farms
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                Pioneering affordable IoT in Western <strong class="text-on-surface font-semibold">Assam</strong>, this student-led venture deployed localized telemetry to boost mustard crop yield by 28%. A triumph of indigenous <strong class="text-on-surface font-semibold">agritech</strong> precision built on local soil biology data.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span class="font-label-md text-label-md text-on-surface-variant">By Anshuman Boro</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:text-primary transition-colors font-bold group" href="#">
+<span>Read Story</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="sm:w-52 sm:h-36 w-full h-44 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="A young Indian college student inspecting electronic soil probe hardware in an experimental lush mustard field in Kokrajhar, Assam, golden hour lighting, cinematic editorial photojournalism style, natural greens and earth tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCBhxfKwTWS_JI86ir9W6TNvu9FjfZ1BRjTFeEHpIJ4ZLcUsY_j2RNiVyyH7c1yP6EElkAQPpWc0BzG5bjCmODp6OCsMomyFtIUVbZ190M3XK5u12QlSPyIc-QNQAjkgpidZxWxtPuL6PXtN5dFCBqRxFklaZCoX_bgHFkj-lnK7h--BYqXoNUqToK2jS11lh7hdktAlJBZWHifjsu6t7jahjLS6sHc_k5l8SW_2M"/>
+</div>
+</article>
+<article class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col sm:flex-row gap-space-lg hover:shadow-md transition-shadow">
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold">
+                  BUSINESS IDEAS
+                </span>
+<span class="font-body-sm text-body-sm text-outline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oct 26, 2026</span>
+<span class="font-body-sm text-body-sm text-outline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">8 min read</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary hover:text-secondary cursor-pointer transition-colors leading-snug">
+                Establishing a Solar-Assisted Cold-Sorting Hub for Ginger &amp; Turmeric: Capital, FSSAI &amp; RoI Analysis
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                A blueprint detailing capital expenditure, decentralized renewable power systems, and APEDA certification for <strong class="text-on-surface font-semibold">agritech</strong> supply chains handling organic produce across lower <strong class="text-on-surface font-semibold">Assam</strong> corridors.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">trending_up</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Model Capex: ₹18.5 Lakhs</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:text-primary transition-colors font-bold group" href="#">
+<span>View Blueprint</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="sm:w-52 sm:h-36 w-full h-44 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Solar powered agro processing warehouse facility with workers sorting raw organic yellow ginger and turmeric roots in Bodoland Assam, natural sunlit industrial setting, deep botanical and brass tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNtC51rmCUsHL_9z_CJzBmOax1K1H8kOLthci3jk3zQntc_0JewNoCsb04kUCyzeLEkhnvAT4fDHUVXdgWg1AjkxZ6tjeOpZ071II5BNbldcmRqFrQ_kCS66c2VxR_YYQB5TKRmye4MYgF6-2bgM1RdAXmhachqBx7jf91kGnVYczdKXCcUjMjIbO6AYuNkNB1bmj-Yzs-tNzcGBvpfLHPwQRCSQb2PnPgCsiG_ZU"/>
+</div>
+</article>
+<article class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col sm:flex-row gap-space-lg hover:shadow-md transition-shadow">
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-bold">
+                  LEARNING
+                </span>
+<span class="font-body-sm text-body-sm text-outline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oct 26, 2026</span>
+<span class="font-body-sm text-body-sm text-outline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">11 min read</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary hover:text-secondary cursor-pointer transition-colors leading-snug">
+                The Northeast Founder's Complete Guide to Cash Flow Management: Navigating 60-Day B2B Credit Cycles
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                Regional rural enterprises face unique liquidity gaps. Learn factoring, invoice discounting via TReDS, and vendor renegotiation customized for emerging <strong class="text-on-surface font-semibold">agritech</strong> suppliers operating across Guwahati and Bodoland.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">menu_book</span>
+<span class="font-label-md text-label-md text-on-surface-variant">By Dr. Manabendra Basumatary</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:text-primary transition-colors font-bold group" href="#">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="sm:w-52 sm:h-36 w-full h-44 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Editorial close-up of a business ledger alongside a laptop displaying financial analytics charts, with traditional Assamese woven gamosa accent in a modern startup office in Assam, soft morning ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_qLL20cpaDQsZMFBjwP1IN5_kIL7obNacKkFbNEgi1hhbn9JDhRYKYz79tqys5XN4e_SeLF67GOPjhcDc44JHe-uQcun_ye9cjV2mG1-JuH8Q7dBkP7uAlElId87OPi3bAI4GXmdUnFjlx9_z6ZiPOVYzQjWKONLZ7FetlPHHdv8yKu6L_y6BSViDnqOPi5GPZCe3MW6_ANdtBItHTz0z_hXPpEicicEzjhkD7DY"/>
+</div>
+</article>
+<article class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col sm:flex-row gap-space-lg hover:shadow-md transition-shadow">
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold">
+                  BUSINESS IDEAS
+                </span>
+<span class="font-body-sm text-body-sm text-outline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oct 14, 2026</span>
+<span class="font-body-sm text-body-sm text-outline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">6 min read</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary hover:text-secondary cursor-pointer transition-colors leading-snug">
+                Drone Agronomy Services for Paddy Farmers in Western Assam: Unit Economics &amp; Payback
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                Evaluating custom DGCA-certified drone fleets for bio-fertilizer spraying. Comprehensive capex models, pilot compensation schedules, and village-level adoption timelines for <strong class="text-on-surface font-semibold">agritech</strong> providers in BTR.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">flight_takeoff</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Payback Period: 14 Months</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:text-primary transition-colors font-bold group" href="#">
+<span>View Blueprint</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="sm:w-52 sm:h-36 w-full h-44 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="An industrial agriculture drone hovering precisely above green wetland paddy fields in Western Assam, clear sky, morning mist, high detail documentary photography capturing modern agricultural technology." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvffOq3vZUwC7jung9-FMCWNFSb1yVhblyC38yJoANsWsBYUxIQlxEiH5yEZ3kTjinH99IIpHYoHgQ_Fs5I4o_JgzTt3NLb3uhdGejJ9mSP_mO2dnpR62SKais1B7nr3La1ydTjXScdgjsBQQnQEh6O61L3eCKE5OfZuZv4JdNwCg0xkzgHkXOTbhhWqAd0-XzGOu3EP028_e48AgSMxIJ0MTrgzmox7_LPQHBPeI"/>
+</div>
+</article>
+<article class="bg-surface-container-lowest p-space-lg rounded-xl flex flex-col sm:flex-row gap-space-lg hover:shadow-md transition-shadow">
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold">
+                  STARTUP STORIES
+                </span>
+<span class="font-body-sm text-body-sm text-outline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oct 22, 2026</span>
+<span class="font-body-sm text-body-sm text-outline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">7 min read</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary hover:text-secondary cursor-pointer transition-colors leading-snug">
+                Chirang Solar Micro-Cold Storage Cuts Crop Spoilage by 40% for Smallholders
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                A decentralized cooperative of 120 vegetable growers leveraged thermal energy storage pods to stabilize market prices during glut harvests in <strong class="text-on-surface font-semibold">Assam</strong>, setting a replicable standard for climate-resilient <strong class="text-on-surface font-semibold">agritech</strong>.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span class="font-label-md text-label-md text-on-surface-variant">By Rwmwi Narzary</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:text-primary transition-colors font-bold group" href="#">
+<span>Read Story</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="sm:w-52 sm:h-36 w-full h-44 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Sustainable solar cold storage unit built with locally sourced bamboo and steel panels in rural Chirang Assam, female farmers in vibrant Dokhona holding fresh vegetables outside, crisp natural daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG8APGFx-1xoB60JVSTQZkJ6eh6TTytUng1yFQk0mcqTaXQxk8Cg5RtxPxN5I2TKj6X3Ory4GiJvJmF2huUHFpWg3kiNAHxr8tguyPVJFLXRxVf5LxzyYS-iMvMsSjOjS143AaCwxPc3BrAlJq2kI_Um2vlkT1LXlFT10DNiJ3VcHnQHbfGS3LI5--oUnaPGwPk1vDnkFtalkX5xHHjTteYwCCupxg_5bm2qJpW_A"/>
+</div>
+</article>
+<div class="flex items-center justify-center gap-space-xs py-space-lg">
+<button aria-label="Previous Page" class="w-10 h-10 rounded-lg flex items-center justify-center bg-surface-container-lowest text-outline hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-lg flex items-center justify-center bg-primary text-on-primary font-headline-sm text-headline-sm">
+            1
+          </button>
+<button class="w-10 h-10 rounded-lg flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors font-headline-sm text-headline-sm">
+            2
+          </button>
+<button class="w-10 h-10 rounded-lg flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors font-headline-sm text-headline-sm">
+            3
+          </button>
+<button aria-label="Next Page" class="w-10 h-10 rounded-lg flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-center sm:text-left">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">help_outline</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Can’t find what you’re looking for?</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Browse our comprehensive Topic Directory or share your venture with our editorial desk.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<a class="font-label-md text-label-md bg-surface-container-lowest hover:bg-surface-container text-on-surface px-space-md py-space-sm rounded-lg transition-colors" href="#">
+              Topic Directory
+            </a>
+<a class="font-label-md text-label-md bg-secondary hover:bg-primary text-on-secondary px-space-md py-space-sm rounded-lg transition-colors" href="#">
+              Submit a Story
+            </a>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div></main><footer class="w-full bg-primary text-inverse-on-surface border-t border-primary-container mt-space-xl"><div class="max-w-[1160px] mx-auto px-gutter-sm lg:px-gutter pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter pb-space-xl border-b border-primary-container"><div class="lg:col-span-4 flex flex-col"><div class="flex items-center gap-space-sm mb-space-md"><span class="w-2.5 h-7 bg-secondary rounded-DEFAULT"></span><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-on-primary leading-none">BODOLAND</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed leading-none mt-1">Entrepreneurs</span></div></div><p class="font-body-md text-body-md text-surface-variant mb-space-md leading-relaxed pr-space-md">Dedicated to documenting, inspiring, and connecting the pioneers reshaping Bodoland Territorial Region and Northeast India through sustainable enterprise and visionary leadership.</p><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary-fixed text-[18px]">verified</span><span class="font-label-md text-label-md text-primary-fixed">Independent Journalistic Trust</span></div></div><div class="lg:col-span-2 flex flex-col"><h4 class="font-headline-sm text-headline-sm text-on-primary mb-space-md flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span><span>Explore</span></h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm"><li class="leading-none"><a class="text-surface-variant hover:text-on-primary transition-colors" data-path="stories" href="#">Stories</a></li><li class="leading-none"><a class="text-surface-variant hover:text-on-primary transition-colors" data-path="young-entrepreneurs" href="#">Young Entrepreneurs</a></li><li class="leading-none"><a class="text-surface-variant hover:text-on-primary transition-colors" data-path="business-ideas" href="#">Business Ideas</a></li><li class="leading-none"><a class="text-surface-variant hover:text-on-primary transition-colors" data-path="learning" href="#">Learning Hub</a></li><li class="leading-none"><a class="text-surface-variant hover:text-on-primary transition-colors" data-path="insights" href="#">Policy Insights</a></li></ul></div><div class="lg:col-span-2 flex flex-col"><h4 class="font-headline-sm text-headline-sm text-on-primary mb-space-md flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span><span>Quick Links</span></h4><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm"><li class="leading-none"><a class="text-surface-variant hover:text-on-primary transition-colors" data-path="about-us" href="#">About Us</a></li><li class="leading-none"><a class="text-surface-variant hover:text-on-primary transition-colors" data-path="editorial-board" href="#">Editorial Board</a></li><li class="leading-none"><a class="text-surface-variant hover:text-on-primary transition-colors" data-path="submit-pitch" href="#">Submit a Pitch</a></li><li class="leading-none"><a class="text-surface-variant hover:text-on-primary transition-colors" data-path="press-room" href="#">Press Room</a></li><li class="leading-none"><a class="text-surface-variant hover:text-on-primary transition-colors" data-path="contact" href="#">Contact &amp; Bureau</a></li></ul></div><div class="lg:col-span-4 flex flex-col"><h4 class="font-headline-sm text-headline-sm text-on-primary mb-space-xs">Stay Informed</h4><p class="font-body-sm text-body-sm text-surface-variant mb-space-md">Receive weekly deep-dives into Northeast startup venture funding, agro-tech breakthroughs, and policy updates directly in your inbox.</p><form class="flex flex-col gap-space-sm" onsubmit="return false;"><div class="flex w-full items-stretch"><input class="flex-1 bg-tertiary-container border border-tertiary-fixed-dim/30 px-space-md py-space-sm text-on-primary placeholder:text-surface-variant/60 font-body-sm text-body-sm rounded-l-lg focus:outline-none focus:border-secondary-fixed transition-colors" placeholder="Enter your business email" type="email"/><button class="bg-secondary hover:bg-secondary/90 text-on-secondary px-space-md py-space-sm font-label-md text-label-md rounded-r-lg transition-colors flex items-center justify-center" type="submit"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div><span class="font-label-sm text-label-sm text-tertiary-fixed-dim/70">Weekly dispatch. Unsubscribe at any time.</span></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-surface-variant"><p class="text-center md:text-left">© 2024 Bodoland Entrepreneurs Editorial Publication. All rights reserved. Registered under Indian Digital Media Codes.</p><div class="flex items-center gap-space-md"><a class="hover:text-on-primary transition-colors" href="#">Privacy Policy</a><span class="text-primary-container">•</span><a class="hover:text-on-primary transition-colors" href="#">Terms of Service</a><span class="text-primary-container">•</span><a class="hover:text-on-primary transition-colors" href="#">Ethics Policy</a></div></div></div></footer><script>
+  (function initNavigationController() {
+    // 1. Dynamic Date Update
+    const dateEls = document.querySelectorAll('.top-bar-date');
+    if (dateEls.length) {
+      const opts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const formatted = new Date().toLocaleDateString('en-US', opts);
+      dateEls.forEach(el => el.textContent = formatted);
+    }
+
+    // 2. Mobile Drawer Toggle
+    const mobileToggle = document.getElementById('mobile-menu-toggle-btn');
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    if (mobileToggle && mobileDrawer) {
+      mobileToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isHidden = mobileDrawer.classList.contains('hidden');
+        if (isHidden) {
+          mobileDrawer.classList.remove('hidden');
+          mobileToggle.setAttribute('aria-expanded', 'true');
+        } else {
+          mobileDrawer.classList.add('hidden');
+          mobileToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // 3. Desktop Dropdown Click & Keyboard Navigation
+    const dropdownItems = document.querySelectorAll('.nav-dropdown-item');
+    dropdownItems.forEach((item) => {
+      const btn = item.querySelector('.nav-btn');
+      const menu = item.querySelector('.dropdown-menu');
+      if (!btn || !menu) return;
+
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = menu.classList.contains('opacity-100');
+        // Close other dropdowns
+        dropdownItems.forEach((other) => {
+          if (other !== item) {
+            const otherMenu = other.querySelector('.dropdown-menu');
+            const otherBtn = other.querySelector('.nav-btn');
+            if (otherMenu) otherMenu.classList.remove('opacity-100', 'visible', '!opacity-100', '!visible');
+            if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        if (isOpen) {
+          menu.classList.remove('opacity-100', 'visible', '!opacity-100', '!visible');
+          btn.setAttribute('aria-expanded', 'false');
+        } else {
+          menu.classList.add('!opacity-100', '!visible');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      dropdownItems.forEach((item) => {
+        const menu = item.querySelector('.dropdown-menu');
+        const btn = item.querySelector('.nav-btn');
+        if (menu && !item.contains(e.target)) {
+          menu.classList.remove('!opacity-100', '!visible');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      if (mobileDrawer && mobileToggle && !mobileDrawer.contains(e.target) && !mobileToggle.contains(e.target)) {
+        mobileDrawer.classList.add('hidden');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Keyboard Accessibility: Escape key closes all dropdowns & drawer
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        dropdownItems.forEach((item) => {
+          const menu = item.querySelector('.dropdown-menu');
+          const btn = item.querySelector('.nav-btn');
+          if (menu) menu.classList.remove('!opacity-100', '!visible');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        });
+        if (mobileDrawer) {
+          mobileDrawer.classList.add('hidden');
+          if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+
+    // 4. URL Parameter category filter support
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryParam = urlParams.get('category');
+    if (categoryParam) {
+      const pills = document.querySelectorAll('.filter-pill');
+      pills.forEach((pill) => {
+        const pillText = pill.textContent.trim().toLowerCase();
+        if (pillText === categoryParam.toLowerCase() || pillText.includes(categoryParam.toLowerCase())) {
+          pill.click();
+        }
+      });
+    }
+  })();
+</script>
+</body></html>
